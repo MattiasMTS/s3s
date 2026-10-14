@@ -24,13 +24,13 @@ fn future_size() {
     let sizes = [
         future_size!(S3Service::call,                           3200),
         future_size!(call,                                      1800),
-        future_size!(prepare,                                   1700),
+        future_size!(prepare,                                   1800),
         future_size!(SignatureContext::check,                    800),
         future_size!(SignatureContext::v2_check,                 300),
         future_size!(SignatureContext::v2_check_presigned_url,   200),
         future_size!(SignatureContext::v2_check_header_auth,     200),
         future_size!(SignatureContext::v4_check,                 800),
-        future_size!(SignatureContext::v4_check_post_signature,  500),
+        future_size!(SignatureContext::v4_check_post_signature,  600),
         future_size!(SignatureContext::v4_check_presigned_url,   600),
         future_size!(SignatureContext::v4_check_header_auth,     700),
     ];

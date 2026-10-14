@@ -48,5 +48,6 @@ mod signature_header_auth;
 mod signature_parsing;
 mod signature_post_signature;
 mod signature_presigned_url;
+mod signature_session_token;
 mod signature_sts;
 mod virtual_hosted_style_hint;
